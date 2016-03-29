@@ -38,7 +38,7 @@ Open ``firefly-iii/.env``.
 Once you've set this up, run the following commands:
 
 * ``cd firefly-iii`` (or how you've named your folder)
-* ``composer install``
+* ``composer install --no-dev``
 * ``php artisan migrate --seed --env=production``
 
 Finally, make sure that the storage directories are writeable, _for example_ by using these commands:
