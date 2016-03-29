@@ -14,7 +14,7 @@ Login to your web server and go to the directory where you want to install Firef
 
 Once you're there, run the following command:
 
-* ``git clone https://github.com/JC5/firefly-iii.git . --depth 1``
+* ``git clone https://github.com/JC5/firefly-iii.git --depth 1``
 
 Or variants:
 
