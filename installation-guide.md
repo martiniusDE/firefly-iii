@@ -8,6 +8,8 @@ permalink: /installation-guide/
 
 Have you seen the [system requirements](../system-requirements/)? If so, please continue!
 
+If you run CentOS, your instructions are below in "First steps for CentOS".
+
 ## Installation steps
 
 Login to your web server and go to the directory where you want to install Firefly III. Please keep in mind that the web root of Firefly III is in the ``firefly-iii/public/`` directory, so you may need to update your web server configuration.
@@ -51,6 +53,38 @@ Finally, make sure that the storage directories are writeable, _for example_ by 
 Surf to your web server, the ``public/`` directory is your root. You may want to change your web server's configuration so you can surf to ``/`` and get Firefly.
 
 You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
+
+## First steps for CentOS
+
+To install the necessary PHP7 packages on CentOS, you can run the following code:
+
+For the latest PHP7 version: 
+
+```
+rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+```
+
+Install the programs needed:
+```
+yum install apache mysql mysql-server php70w php70w-mbstring php70w-mcrypt php70w-bcmath php70w-gd php70w-intl php70w-pdo php70w-xml php70w-mysql.x86_64
+```
+
+Install composer
+
+```
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+```
+
+This should get you up and running. Now, follow the "installation steps" at the top of this page.
+
+
+### Registering
+
+Surf to your web server, the ``public/`` directory is your root. You may want to change your web server's configuration so you can surf to ``/`` and get Firefly.
+
+You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
+
 
 ## Installation errors
 
