@@ -39,3 +39,4 @@ Some other things you must remember:
 
 * The demo site has a trial period, which is one month. After one month, you will no longer be able to login.
 * If your email address is invalid, your account is automatically blocked.
+* Temporary email addresses and throw-away addresses are automatically blocked.
