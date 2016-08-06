@@ -7,16 +7,16 @@ show: yes
 
 _Please note that everything in these screenshots is fictional and may not be realistic._
 
-![Index](https://i.nder.be/cxzmb7m0)
+[![Index](https://i.nder.be/hr8fhqkn/1024)](https://i.nder.be/hr8fhqkn)
 
-![Accounts](https://i.nder.be/guru8wkq)
+[![Accounts](https://i.nder.be/cvvukqfk/1024)](https://i.nder.be/cvvukqfk)
 
-![Budgets](https://i.nder.be/cpcvdwfx)
+[![Budgets](https://i.nder.be/hcncgx2h/1024)](https://i.nder.be/hcncgx2h)
 
-![Reports 1](https://i.nder.be/hyu4d3wp)
+[![Reports 1](https://i.nder.be/ckfpvyfc/1024)](https://i.nder.be/ckfpvyfc)
 
-![Reports 2](https://i.nder.be/hnmb96dn)
+[![Reports 2](https://i.nder.be/hw07bks9/1024)](https://i.nder.be/hw07bks9)
 
-![Bills](https://i.nder.be/c73g7mpk)
+[![Bills](https://i.nder.be/g5zx0fnc/1024)](https://i.nder.be/g5zx0fnc)
 
-![Piggy banks](https://i.nder.be/gr3wrunc)
+[![Piggy banks](https://i.nder.be/gu0dwqrx/1024)](https://i.nder.be/gu0dwqrx)
