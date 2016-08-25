@@ -12,6 +12,8 @@ Other methods (recommended by me in the past, mea culpa) will not allow you to u
 
 There are extra upgrade instructions [for upgrading to 3.7.0 on this page](https://github.com/JC5/firefly-iii/wiki/Upgrade-to-3.7.0).
 
+There are also extra upgrade instructions [for upgrading to 3.10.0 on this page](https://github.com/JC5/firefly-iii/wiki/Upgrade-to-3.10).
+
 ## Upgrading
 
 * Go to the ``firefly-iii`` folder.

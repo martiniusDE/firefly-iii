@@ -30,7 +30,7 @@ If you decide you want to run Firefly III yourself (this is the mandatory next s
 
 - [The system requirements](system-requirements/);
 - [The installation guide](installation-guide/);
-- [The upgrade guide](upgrade-guide/) (if you already running it);
+- [The upgrade guide](upgrade-guide/) (if you are already running it);
 - [Some important must-reads](must-reads/) that did not fit on this page
 
 
