@@ -19,11 +19,9 @@ The first thing I did was simple: I started living from the first day of the mon
 2. On the _last_ day of the month, I think how much money I will need in the next month.
 3. On the _first_ day of the month, I put that amount in my checking account.
 
-So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the month, when you move (part of it) back to your checking account. If you
-get paid every week, this routine repeats weekly.
+So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the month, when you move (part of it) back to your checking account. If you get paid every week, this routine repeats weekly.
 
-This is quite difficult the first few times, but after a while you'll notice that you have (pretty effectively) moved your routine away from your salary and income. This alone
-gives you great financial stability. 
+This is quite difficult the first few times, but after a while you'll notice that you have (pretty effectively) moved your routine away from your salary and income. This alone gives you great financial stability. 
 
 This procedure allowed me to program a very simple tool (the original "Firefly") which held very simple things: transactions. Oh and some accounts to keep track of the money. But that was basically it. It showed me where my money went.
 

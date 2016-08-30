@@ -13,7 +13,9 @@ their current cashflow. There are tons of ways to save and earn money.
 
 Firefly works on the principle that if you know where you're money is going, you can stop it from going there.
 
-To get to know Firefly, and to see if it fits you, check out these resources:
+You can download [Firefly from Github](https://github.com/JC5/firefly-iii). [The installation guide](installation-guide/) has all the details you need.
+
+Of course, to get to know Firefly III first, and to see if it fits you, please check out these resources:
 
 - The [screenshots](screenshots/) so you can see what it looks like;
 - The [feature list](features/) so you know what it does; 

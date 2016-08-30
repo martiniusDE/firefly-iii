@@ -62,6 +62,8 @@ This should get you up and running. Now, follow the "installation steps" at the 
 
 SSH into your server and go to the directory where you want to install Firefly III. Please keep in mind that the web root of Firefly III is in the ``firefly-iii/public/`` directory, so you may need to update your web server configuration.
 
+If you are running Apache, please change **AllowOverride None** to ``AllowOverride All`` in your Apache configuration.
+
 Once you're there, run the following command:
 
 * ``git clone https://github.com/JC5/firefly-iii.git --depth 1``
@@ -82,7 +84,6 @@ Open ``firefly-iii/.env``.
 * Change the ``DB_*`` settings as you see fit.
 * Update the ``MAIL_*`` settings as you see fit.
 * If you want to track statistics, update the Google Analytics ID.
-* Set ``RUNCLEANUP`` to ``false``
 * Set ``SITE_OWNER`` to your own email address.
 
 Once you've set this up, run the following commands:
