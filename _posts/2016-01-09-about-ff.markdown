@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Firefly III"
+title:  "Welcome to Firefly III!"
 date:   2016-01-09 09:23:50
 ---
 
@@ -13,7 +13,7 @@ their current cashflow. There are tons of ways to save and earn money.
 
 Firefly works on the principle that if you know where you're money is going, you can stop it from going there.
 
-You can download [Firefly from Github](https://github.com/JC5/firefly-iii). [The installation guide](installation-guide/) has all the details you need.
+You can **[download Firefly III from Github](https://github.com/JC5/firefly-iii)**. [The installation guide](installation-guide/) has all the details you need.
 
 Of course, to get to know Firefly III first, and to see if it fits you, please check out these resources:
 
