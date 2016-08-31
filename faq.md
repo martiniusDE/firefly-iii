@@ -5,6 +5,18 @@ permalink: /faq/
 show: yes
 ---
 
+## I have installation problems
+
+[Open an issue](https://github.com/JC5/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).
+
+## The installation is difficult
+
+I know, and I'm sorry. I never intended this tool to be actually used by other people. I put it on Github because it was free. 
+
+## Firefly III is complicated
+
+Same answer, I'm afraid. Let me know what I can do to help!
+
 ## I get an error about "ZERO transactions".
 
 This is a rare one, but it happens. To fix it:

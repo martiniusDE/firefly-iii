@@ -26,6 +26,8 @@ But actually, it features:
 - Predict and anticipate [bills](https://en.wikipedia.org/wiki/Invoice);
 - View income / expense [reports](https://en.wikipedia.org/wiki/Financial_statement);
 - [Rule based](https://en.wikipedia.org/wiki/Rule-based_system) transaction handling with the ability to create your own rules.
+- The ability to export data so you can move to another system.
+- The ability to _import_ data so you can move _from_ another system.
 - Organize expenses using tags;
 - Lots of help text in case you don't get it.
 

@@ -29,7 +29,7 @@ cd ~; wget https://getcomposer.org/download/1.0.2/composer.phar; chmod +x compos
 
 ```
 
-That should install MySQL and the correct version of PHP. If you want to use Apache or nginx is up to you.
+That should install MySQL and the correct version of PHP. If you want to use Apache or nginx is up to you. Many tutorials can guide you in the right direction. I believe PHP 7.0 is being shipped with Ubuntu 16, but I haven't checked yet.
 
 
 ## 2. Preparing your CentOS server
@@ -103,11 +103,7 @@ Surf to your web server, the ``public/`` directory is your root. You may want to
 
 You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
 
-### Registering
-
-Surf to your web server, the ``public/`` directory is your root. You may want to change your web server's configuration so you can surf to ``/`` and get Firefly.
-
-You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
+It may seem strange to register on your own website but there you are.
 
 
 ## Installation errors

@@ -13,7 +13,7 @@ Firefly III has been built around how I manage my finances. Please read this car
 
 After being a grownup for a while I noticed I was living from paycheck to paycheck. I could not save money. I just waited to get paid.
 
-The first thing I did was simple: I started living from the first day of the month until the last. This meant that I had to do a few things:
+The first thing I did was simple: I started living from the first day of the month until the last. This meant that I had to do a few things. This is something I still do:
 
 1. On the day I get paid, I move my entire salary to my savings account.
 2. On the _last_ day of the month, I think how much money I will need in the next month.
