@@ -46,16 +46,13 @@ sudo apt-get install -y php7.0 php7.0-cli php7.0-common php7.0-fpm php7.0-mysql 
 
 ```
 
-Install composer by using the following command.
+Either way, install composer by using the following command.
 
 
 ```
 cd ~; wget https://getcomposer.org/download/1.0.2/composer.phar; chmod +x composer.phar; sudo mv composer.phar /usr/local/bin/composer; sudo composer selfupdate
 
 ```
-
-That should install MySQL and the correct version of PHP. If you want to use Apache or nginx is up to you. Many tutorials can guide you in the right direction. I believe PHP 7.0 is being shipped with Ubuntu 16, but I haven't checked yet.
-
 
 ## 1b. CentOS
 
