@@ -33,6 +33,8 @@ sudo apt-get install -y mysql-server
 sudo mysql_install_db; sudo mysql_secure_installation
 ```
 
+If everything works as intended you have created a root user for MySQL and a password. Maybe you had MySQL already.
+
 Ubuntu 16 and higher come with PHP 7. You're set! If you do not run Ubuntu 16 or higher, use these commands to install PHP 7:
 
 
@@ -81,9 +83,10 @@ This should get you up and running. Now, follow the "installation steps".
 ## 2. Installation steps
 
 1. SSH into your server, or otherwise access it.
-2. Go to the directory where you want to install Firefly III.
+2. Use your MySQL credentials (you created these when you installed MySQL, or you had them already) to create a new database called ``firefly-iii`` and a user ``firefly-iii``. Please give this user a strong password, and access to the database.
+3. Go to the directory where you want to install Firefly III.
    - Please keep in mind that the web root of Firefly III is in the ``firefly-iii/public/`` directory, so you may need to update your web server configuration.
-3. Once you're there, run the following command:
+4. Once you're there, run the following command:
    - ``git clone https://github.com/JC5/firefly-iii.git --depth 1``
    - Or variants of this command:
    - ``git clone https://github.com/JC5/firefly-iii.git some-other-dir --depth 1``
@@ -91,17 +94,56 @@ This should get you up and running. Now, follow the "installation steps".
 
 This will download Firefly III and put it in the right place.
 
+### Configure Firefly III
+
 Then, configure Firefly III by doing the following:
 
+1. ``cp firefly-iii/.env.example firefly-iii/.env``
+2. ``php artisan key:generate```
 
-``cp firefly-iii/.env.example firefly-iii/.env``
+Open ``firefly-iii/.env`` and check out the instructions below. Fields in the ``.env`` file that are not mentioned here should not be changed unless you know what they're for.
 
-Open ``firefly-iii/.env``.
+#### APP settings
 
-* Change the ``DB_*`` settings as you see fit.
-* Update the ``MAIL_*`` settings as you see fit.
-* If you want to track statistics, update the Google Analytics ID.
-* Set ``SITE_OWNER`` to your own email address.
+* ``APP_DEBUG`` set this to true when you file a bug. It will enable detailed errors.
+* ``APP_FORCE_SSL`` Firefly III knows if you use http or https. To force https, set this to true.
+* ``APP_FORCE_ROOT`` Firefly III knows its own web address. If it is mistaken, fill in this field
+* ``APP_LOG_LEVEL`` Change this to get more detailed logging.
+
+#### DB settings
+
+Change these settings to match your MySQL settings. Almost always, only the username, password and database need to be changed.
+
+#### COOKIE settings
+
+* ``COOKIE_PATH`` Tie the cookies to a specific path if necessary
+* ``COOKIE_DOMAIN`` Tie the cookies to a specific domain
+* ``COOKIE_SECURE`` Only use cookies over https
+
+#### MAIL settings
+
+These are important so pay attention. Use your GMail account or create an account at mailtrap.io. Firefly III uses these settings to mail error reports and detailed crash information if necessary. In the future, Firefly III will use these settings to mail you financial reports and stuff like that.
+
+Whatever mail service you use, they can tell you what these settings are.
+
+* ``MAIL_DRIVER`` Is usually smtp, but could be sendmail too.
+* ``MAIL_HOST`` The (SMTP) host.
+* ``MAIL_PORT`` The port, if relevant.
+* ``MAIL_FROM`` The "from"-address
+* ``MAIL_USERNAME`` The user name for the (SMTP) host.
+* ``MAIL_PASSWORD`` The password.
+* ``MAIL_ENCRYPTION`` If relevant. Usually TLS or SSL.
+
+#### Other settings
+
+* ``SEND_REGISTRATION_MAIL`` Send new users a email for their registration. Leave this on true, it's useful for your own registration.
+* ``MUST_CONFIRM_ACCOUNT`` Is usually quite pointless for you so leave it to false.
+* ``SHOW_INCOMPLETE_TRANSLATIONS`` Set this to true and you'll see all the weird languages Firefly III supports that are only half-translated.
+
+* ``ANALYTICS_ID`` Put in a GA analytics ID if you want.
+* ``SITE_OWNER`` Fill in your own email address.
+
+Any other settings, such as in the ``config`` directory should not be changed.
 
 Once you've set this up, run the following commands:
 
@@ -122,8 +164,8 @@ If you are running Apache, please change **AllowOverride None** to ``AllowOverri
 <Directory /var/www/firefly-iii/public>
 Options -Indexes FollowSymLinks
 AllowOverride All
-Order allow,deny
-allow for all
+Order allow, deny
+allow from all
 </Directory>
 ```
 
@@ -168,7 +210,6 @@ You will see a Sign In screen. Use the Register pages to create a new account. A
 
 It may seem strange to register on your own website but there you are.
 
-
 ## Installation errors
 
 Some common errors:
@@ -210,3 +251,7 @@ in firefly-iii/app/Http/Controllers/Controller.php:55
 Solution: You haven't enabled or installed the Internationalization extension.
 
 If you are running FreeBSD, install ``pecl-intl``.
+
+### Cannot find /login or other URL's
+
+Make sure your Apache and/or nginx configuration is correct.
