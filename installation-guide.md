@@ -94,6 +94,11 @@ This should get you up and running. Now, follow the "installation steps".
 
 This will download Firefly III and put it in the right place.
 
+To install all necessary packages, run:
+
+1. ``composer install --no-scripts --no-dev``
+
+
 ### Configure Firefly III
 
 Then, configure Firefly III by doing the following:
@@ -147,8 +152,6 @@ Any other settings, such as in the ``config`` directory should not be changed.
 
 Once you've set this up, run the following commands:
 
-* ``cd firefly-iii`` (or how you've named your folder)
-* ``composer install --no-dev``
 * ``php artisan migrate --seed --env=production``
 
 Finally, make sure that the storage directories are writeable, _for example_ by using these commands:
